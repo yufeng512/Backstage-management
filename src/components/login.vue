@@ -35,10 +35,10 @@ export default {
   },
   methods : {
     loginbtn (){
-      this.$router.push('/content/information')
       this.$http.post('https://backend-api.yinli99.com/api/wechat/operation/login?username='+this.username+'&password='+this.password+'').then((res)=>{
         if(res.body.code === '000'){
           window.localStorage.token = res.body.t.token
+          this.$router.push('/content/information')
         }else{
           this.showpopup = true
           this.popup.title = '提示'
