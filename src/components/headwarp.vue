@@ -2,7 +2,7 @@
   <div class="">
     <div class="header">
       <div class="head-content">
-        <img src="../assets/user-pic.jpeg">个人主页
+        <img src="../assets/user-pic.jpeg">公司主页
         <a class="loginlink" v-on:click="loginbtn">{{loginTxt}}</a>
         <a class="fetch" v-on:click="fetch" v-if="$store.state.isLogin">退出</a>
       </div>
