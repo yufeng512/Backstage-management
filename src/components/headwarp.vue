@@ -1,9 +1,11 @@
 <template>
   <div class="">
     <div class="header">
-      <img src="../assets/u324.jpg" alt="">上文引立
-      <a class="loginlink" v-on:click="loginbtn">{{loginTxt}}</a>
-      <a class="fetch" v-on:click="fetch" v-if="$store.state.isLogin">退出</a>
+      <div class="head-content">
+        <img src="../assets/user-pic.jpeg">个人主页
+        <a class="loginlink" v-on:click="loginbtn">{{loginTxt}}</a>
+        <a class="fetch" v-on:click="fetch" v-if="$store.state.isLogin">退出</a>
+      </div>
     </div>
   </div>
 
@@ -57,10 +59,15 @@ export default {
   background: #fff;
   position: absolute;
   z-index:2;
+  border-bottom: 1px solid #347ab6;
+}
+.head-content{
+  padding:0 20px;
 }
 .header img{
   width:40px;
   height:40px;
+  border-radius:50%;
   vertical-align:middle;
   margin:0 10px;
 }

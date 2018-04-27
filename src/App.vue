@@ -61,7 +61,7 @@ html,body{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color:#2c3e50;
-  width:1200px;
+  width:100%;
   height: 100%;
   margin:0 auto;
   position: relative;
@@ -81,19 +81,20 @@ table tr td{
 }
 .subleft{
   width: 200px;
-  height:100%;
+  bottom: 0;
   background: #eaeaea;
   position: absolute;
   left:0;
-  top:0;
+  top:70px;
   z-index:1;
 }
 .contright{
-  width:978px;
   background:#fff;
   position:absolute;
   left:210px;
   top:70px;
+  right:10px;
+  bottom:10px;
   border:1px solid #dbdbdb;
 }
 </style>
